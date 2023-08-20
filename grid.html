@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Grid</title>
+        <style>
+            
+            .item1{grid-area: header;}
+            .item2{grid-area: menu;}
+            .item3{grid-area: skill;}
+            .item4{grid-area: style;}
+            .item5{grid-area: body;}
+            .item6{grid-area: footer;}
+            .grid-container
+            {
+                display: grid;
+                grid-template-areas: ' header header  header header header header '
+                ' menu menu skill skill style style '
+                ' menu menu skill skill body body '
+                ' footer footer footer footer footer footer ';
+                background-color: cadetblue;
+                padding: 70px;
+                gap: 22px;
+                border:double ;
+                border-radius: 20px;
+                border-color: lightpink;
+                
+            }
+            .grid-container >div {
+                background-color: lightcoral;
+                text-align: center;
+                font-size: xx-large;
+                border:double;
+
+            }
+            .body{
+
+            }
+        </style>
+    </head>
+    <body>
+        <h2>CSS GRID</h2>
+        <div class="grid-container">
+        <div class="item1">header</div>
+        <div class="item2">menu</div>
+        <div class="item3">skill</div>
+        <div class="item4">style</div>
+        <div class="item5">body</div>
+        <div class="item6">footer</div>
+        </div>
+    </body>
+</html>
